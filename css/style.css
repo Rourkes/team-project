@@ -181,3 +181,153 @@ button {
     line-height: 1.5;
     color: #fff;
 }
+
+/* Modal-window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.56);
+}
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 76px 67px 75px 50px;
+    width: 650px;
+    min-height: 854px;
+    background: #fff;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top:24px;
+  right: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color:#275F7A;
+  width: 40px;
+  height: 40px;
+  color:#fff;
+}
+
+.modal-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 19px;
+}
+
+.modal-subtitle::before{
+  /* border: 2px solid #d8d8d8; */
+  content: '';
+    display: block;
+    width: 143px;
+    height: 2px;
+    background-color: #d8d8d8;
+
+}
+
+.modal-title {
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.255;
+  letter-spacing: 0.03em;
+  color: #022c40;
+  margin-bottom: 31px;
+}
+.modal-title-part{
+  color: #000;
+}
+
+.modal-text {
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #022c40;
+    margin-bottom: 23px;
+}
+
+.modal-form {}
+
+.modal-label {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.modal-input {
+  border: 1px solid #cacaca;
+    border-radius: 5px;
+  width: 100%;
+    height: 60px;
+    padding-left: 21px;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+
+}
+.modal-input:focus{
+  border-color: #275F7A;
+}
+.modal-input::placeholder{
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+}
+
+.modal-textarea {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.modal-input-text {
+  width: 100%;
+    height: 149px;
+    padding: 21px;
+    outline: none;
+    resize: none;
+    transition: border-color 250ms ease-in-out;
+    border: 1px solid #cacaca;
+      border-radius: 5px;
+    }
+
+.modal-input-text::placeholder{
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+}
+.modal-input-text:focus{
+  border-color: #275F7A;
+}
+
+.modal-btn-submit {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 181px;
+    height: 48px;
+    background: #022c40;
+    border: none;
+}

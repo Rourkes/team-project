@@ -58,7 +58,7 @@
               We work only in small towns. Thanks to this, we maintain quality
               and we will not spray
             </p>
-            <button class="hero-btn" type="button">
+            <button class="hero-btn" type="button" data-modal-open>
               Submit your application
             </button>
           </div>
@@ -257,5 +257,26 @@
       </ul>
       <address><a href="tel:88006549732"></a>8 (800) 654-97-32</address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-btn-close" type="button" data-modal-close>X</button>
+        <p class="modal-subtitle">Contact Us</p>
+        <p class="modal-title"><span class="modal-title-part">Contact</span> Us & We Can Work Together</p>
+        <p class="modal-text">Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu enim id gravida pulvinar. Tristique consectetur mi
+        curabitur congue enim dignissim</p>
+        <form class="modal-form">
+          <label class="modal-label" for="user-name">
+          <input class="modal-input" type="text" placeholder="Your Name" name="user-name" id="user-name"/></label>
+          <label class="modal-label"  for="user-email">
+          <input class="modal-input"  type="email" placeholder='Your Email' name="user-email" id="user-email"/></label>
+          <label class="modal-textarea" for="user-comment">
+          <textarea class="modal-input-text"  name="user-comment" placeholder="Your Message" id="user-comment"></textarea></label>
+          <button class="modal-btn-submit" type="submit">Hire Us</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js">
+      
+    </script>
   </body>
 </html>
