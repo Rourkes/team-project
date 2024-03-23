@@ -44,6 +44,18 @@ button {
     padding-right: 15px;
     margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* HEADER */
 
 .header {
@@ -180,6 +192,121 @@ button {
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+}
+
+/* Request */
+.request {
+  background: #fafafa;
+  padding: 100px 0;
+}
+
+.container {}
+
+.request-title {
+  max-width: 707px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: center;
+    color: #2e363e;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 26px;
+}
+
+.request-subtitle {
+    font-size: 21px;
+    line-height: 1.43;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #2e363e;
+    margin-bottom: 50px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.request-box{
+margin-bottom: 32px;
+}
+
+.request-label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.request-input {
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    padding: 16px 21px;
+    width: 280px;
+    height: 70px;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+}
+.request-input:focus {
+  border-color: #275F7A;
+}
+
+.request-input::placeholder{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.1;
+    color: #bfbfbf;
+}
+
+.request-btn {
+  background: #275f7a;
+  border-radius: 5px;
+    min-width: 280px;
+    height: 70px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+
+
+.checkbox-requset {}
+
+.checkbox-btn-request {}
+
+.visually-hidden {}
+
+.checkbox-label {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #7e868e;
+}
+
+.wrap-icon-request {
+border: 1px solid #000;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+}
+
+.checkbox-btn-request:checked + .checkbox-label .wrap-icon-request{
+border: none;
+background-color:#022c40;
+fill: #fff;
+}
+
+
+.icon-request {}
+
+.private-policy {
+  text-decoration: underline;
+  color: #275f7a;
 }
 
 /* Modal-window */
